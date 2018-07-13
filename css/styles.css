@@ -12,12 +12,12 @@ body::before {
   height: 100vh;
   bottom: calc(100% - 100vh);
   z-index: -1;
-  background-color: rgba(171, 253, 38, 0.06);
+  background-color: rgba(52, 253, 38, 0.02);
 }
 body:after {
   left: calc(100% - 100vh);
   border-radius: 100% 0 100% 0;
-  background-color: rgba(253, 52, 38, 0.06);
+  background-color: rgba(253, 52, 38, 0.02);
 }
 body:before {
   right: calc(100% - 100vh);
@@ -70,7 +70,6 @@ body:before {
   text-shadow: 0 0 9px rgba(0, 128, 128, 0.49);
   top: calc(100% - 5em);
   left: 30px;
-  transition: all 0.5s ease-in-out;
 }
 .mainStyles .skills {
   display: block;
@@ -115,7 +114,7 @@ body:before {
   padding: 20px 10px;
 }
 .mainStyles .main-container {
-  box-shadow: 0 0 1px inset rgba(0, 128, 128, 0.41);
+  background: rgba(0, 128, 128, 0.04);
   display: block;
   margin: 0 auto;
   position: relative;
@@ -163,6 +162,7 @@ body:before {
 .mainStyles .info-text {
   display: table;
   vertical-align: middle;
+  text-align: center;
   padding: 20px;
   background: rgba(253, 253, 253, 0.16);
   border-radius: 5px;
