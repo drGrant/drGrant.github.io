@@ -18,12 +18,11 @@ var IOIndex;
                     sandbox: $("#sandbox"),
                     mainStyles: $('.mainStyles'),
                     mainImage:$('.main-image')
-                }
-                target.mainStyles.toggleClass('layout_2');
+                },
+                choosePic = Math.round(Math.random()*1);
+               if(choosePic==1) target.mainStyles.toggleClass('layout_2');
                 target.mainImage.on("click", "", (e) => {
                     target.mainStyles.toggleClass('layout_2');
-
-
                 })
             })
 
