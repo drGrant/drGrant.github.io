@@ -1,0 +1,173 @@
+body,
+html {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body::after,
+body::before {
+  content: "";
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  bottom: calc(100% - 100vh);
+  z-index: -1;
+  background-color: rgba(171, 253, 38, 0.06);
+}
+body:after {
+  left: calc(100% - 100vh);
+  border-radius: 100% 0 100% 0;
+  background-color: rgba(253, 52, 38, 0.06);
+}
+body:before {
+  right: calc(100% - 100vh);
+  border-radius: 0 100% 0 100%;
+}
+.mainStyles {
+  background-color: rgba(0, 128, 128, 0.75);
+  font-size: 100%;
+}
+.mainStyles .logo-wrapper,
+.mainStyles .skills-wrapper {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  vertical-align: middle;
+}
+.mainStyles .skills-wrapper {
+  z-index: 0;
+}
+.mainStyles .logo {
+  padding: 0 10px;
+  display: inline-table;
+  margin: 0 auto;
+  font-weight: normal;
+  position: relative;
+}
+.mainStyles .logo .title {
+  font-size: 5em;
+  margin: 0 auto;
+}
+.mainStyles .logo .title .side-sub {
+  font-size: 0.29em;
+  font-weight: normal;
+  display: inline-block;
+  transform: rotate(90deg);
+  vertical-align: middle;
+  margin: 0 -40px 15px;
+}
+.mainStyles .logo .sub-title {
+  margin: -20px auto 0;
+  letter-spacing: normal;
+  text-indent: .092em;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.mainStyles .logo.shadow {
+  position: absolute;
+  transform: skew(-50deg) rotateY(-2deg) rotateX(73deg);
+  color: transparent;
+  text-shadow: 0 0 9px rgba(0, 128, 128, 0.49);
+  top: calc(100% - 5em);
+  left: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.mainStyles .skills {
+  display: block;
+  min-width: 300px;
+  margin: 0;
+  border-spacing: 10px 0;
+}
+.mainStyles .skills .items {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1em;
+  min-width: 50px;
+  padding: 1% 20px;
+  position: relative;
+  border-radius: 0;
+  background-color: rgba(0, 128, 128, 0.5);
+  transition: all 0.09s ease-in-out;
+}
+.mainStyles .skills .items:first-child {
+  background-color: rgba(0, 128, 128, 0.25);
+}
+.mainStyles .skills .items:last-child {
+  background-color: rgba(0, 128, 128, 0.75);
+}
+.mainStyles .skills .items:hover {
+  padding: 6.25% 20px;
+}
+.mainStyles .skills .items .inner {
+  display: table;
+  position: relative;
+  margin: 10px auto 0;
+}
+.mainStyles .bottom {
+  position: absolute;
+  bottom: 0;
+  display: block;
+}
+.mainStyles .header-container {
+  background: rgba(0, 128, 128, 0.1);
+  display: table;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.mainStyles .main-container {
+  box-shadow: 0 0 1px inset rgba(0, 128, 128, 0.41);
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 20px 0;
+  max-width: 1280px;
+  height: calc(100vh - 20px);
+}
+.mainStyles .main-container:before,
+.mainStyles .main-container:after {
+  content: "";
+  display: inline-block;
+  position: fixed;
+  background: rgba(0, 128, 128, 0.41);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+}
+.mainStyles .main-container:before {
+  left: 100%;
+}
+.mainStyles .main-container:after {
+  right: 100%;
+}
+.mainStyles .main-image {
+  display: table;
+  margin: 0 auto;
+}
+.mainStyles .main-image:before {
+  content: " ";
+  width: 151px;
+  height: 151px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../images/toonMe.jpg");
+  background-position: -143px -59px;
+  border-radius: 50%;
+  border: 15px solid rgba(0, 128, 128, 0.36);
+  box-shadow: 0 0 105px inset rgba(0, 128, 128, 0.6);
+  margin: 10px auto;
+}
+.mainStyles .info-wrapper {
+  display: table;
+  margin: 0 auto;
+}
+.mainStyles .info-text {
+  display: table;
+  vertical-align: middle;
+  padding: 20px;
+  background: rgba(253, 253, 253, 0.16);
+  border-radius: 5px;
+  margin: o auto;
+}
+.mainStyles .hide {
+  display: none;
+}
