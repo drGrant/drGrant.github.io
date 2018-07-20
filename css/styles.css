@@ -240,6 +240,11 @@ html {
   transition-delay: .1s;
   opacity: 1;
 }
+@media screen and (max-width: 1024px) {
+  .mainStyles .sandBox canvas {
+    display: none;
+  }
+}
 .mainStyles .playPause {
   display: block;
   background: black;
