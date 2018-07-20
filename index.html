@@ -7,20 +7,20 @@
     <title>David Grant</title>
     <link rel="stylesheet" href="css/resetStyles.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/planck-js/0.1.44/planck.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="js/app.js" type="text/babel"></script>
 </head>
 
 <body class="mainStyles">
     <div class="main-container">
-        <header class="header-container sections">
-            <article class="logo-wrapper">
-                <section class="logo">
-                    <p class="title">David
-                        <span class="side-sub">Grant</span>
-                    </p>
-                    <p class="sub-title">U.I Engineer</p>
-                </section>
+        <header  class="header-container sections">
+            <article id="headerContainer" class="logo-wrapper">
+                
             </article>
         </header>
         <section class="body-container sections">
@@ -51,9 +51,14 @@
                             </svg>
                         </a>
                     </li>
+                    <li class="item">
+                        <a href=""><label class="playPause js-playBtn"><span>ThreeJs BKG</span><input type="checkbox" ><span class="state"></span></lable></a>
+                    </li>
                 </ul>
             </article>
+            <article id="sandBox" class="info-wrapper sandBox"></article>
         </section>
+        
     </div>
 </body>
 
