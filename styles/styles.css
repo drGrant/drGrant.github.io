@@ -22,11 +22,11 @@
 }
 :root {
   --radial: 132deg;
-  --purpleSocks: purple;
-  --redSocks: red;
   --gradColor_1: #ffb76b;
   --gradColor_2: #22bad6;
-  --linerGradient: var(--gradColor_2) 15%, var(--gradColor_1) 90%;
+  --gradColor_gray_1: #696a6b;
+  --gradColorgray_2: #cdcecf;
+  --linerGradient: var(--gradColor_1) 15%, var(--gradColor_2) 90%;
   --animationSpeed: 3s;
 }
 .grad1 {
@@ -69,15 +69,19 @@ html {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-canvas {
-  height: 100vh;
+#background-image canvas {
+  height: 100vh !important;
+  width: 100vw !important;
   background-color: transparent;
   margin: 0;
 }
 .portfolio-title {
   background: linear-gradient(var(--radial), var(--linerGradient));
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
   font-family: "Alfa Slab One", cursive;
-  font-size: 7.5vh;
+  font-size: 8vh;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -85,6 +89,22 @@ canvas {
   pointer-events: none;
   text-align: center;
   height: 100%;
+  position: relative;
+  z-index: 300;
+  opacity: 0.5;
+}
+.portfolio-title-mobile {
+  background: linear-gradient(var(--radial), var(--linerGradient));
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 7.5vw;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  pointer-events: none;
+  text-align: center;
   position: relative;
   z-index: 300;
   opacity: 0.5;
@@ -257,6 +277,15 @@ canvas {
 }
 .clip-right {
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+.corner_circle {
+  clip-path: circle(26.2% at 29% 71%);
+}
+.broken_glass {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 92% 81%, 79% 83%, 66% 95%, 53% 67%, 43% 85%, 33% 79%, 20% 93%, 8% 90%, 0 100%);
+}
+.intro_animation {
+  animation: fadeIn 1s ease-in-out;
 }
 @keyframes shiprattle {
   0% {

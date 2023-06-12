@@ -3,11 +3,11 @@
 @import "./animate.min.css";
 :root {
   --radial: 132deg;
-  --purpleSocks: purple;
-  --redSocks: red;
-  --gradColor_1: rgba(255, 183, 107, 1);
-  --gradColor_2: rgba(34, 186, 214, 1);
-  --linerGradient: var(--gradColor_2) 15%, var(--gradColor_1) 90%;
+     --gradColor_1: rgba(255, 183, 107, 1);
+   --gradColor_2: rgba(34, 186, 214, 1);
+ --gradColor_gray_1: rgba(105, 106, 107, 1);
+ --gradColorgray_2: rgba(205, 206, 207, 1);
+  --linerGradient: var(--gradColor_1) 15%, var(--gradColor_2) 90%;
   --animationSpeed: 3s;
 }
 
@@ -74,21 +74,21 @@ code {
     monospace;
 }
 
-canvas {
-  height: 100vh;
-
-  // background: linear-gradient(to bottom, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%);
-  // background: linear-gradient(to bottom, #FFB76B 0%, #FFA73D 30%, #FF7C00 38%, #FF7F04 43%, #09B4E8 73%, #000000 100%);
-  //background-color: #2688a4;
+#background-image canvas {
+  height: 100vh !important;
+  width: 100vw !important;
   background-color: transparent;
-  // background: linear-gradient(131.03deg, rgb(12, 12, 12) 15.09%, rgb(12, 12, 12) 99.99%);
   margin: 0;
 }
 
 .portfolio-title {
   background: linear-gradient(var(--radial), var(--linerGradient));
+  // background-image;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
   .Alfa();
-  font-size: 7.5vh;
+  font-size: 8vh;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -101,7 +101,23 @@ canvas {
   opacity: 0.5;
   //   text-shadow: 0 0 1px rgba(255,0,0,.5);
 }
-
+.portfolio-title-mobile {
+  background: linear-gradient(var(--radial), var(--linerGradient));
+  // background-image;
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  .Alfa();
+  font-size: 7.5vw;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  pointer-events: none;
+  text-align: center;
+  position: relative;
+  z-index: 300;
+  opacity: 0.5;
+}
 .shadow {
   background: linear-gradient(
     131.03deg,
@@ -313,7 +329,15 @@ canvas {
 .clip-right {
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
-
+.corner_circle{
+  clip-path: circle(26.2% at 29% 71%);
+}
+.broken_glass{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 92% 81%, 79% 83%, 66% 95%, 53% 67%, 43% 85%, 33% 79%, 20% 93%, 8% 90%, 0 100%);
+}
+.intro_animation{
+  animation: fadeIn 1s ease-in-out;
+}
 @keyframes shiprattle {
   0% {
     transform: translateX(0.5px) translateY(0.5px);

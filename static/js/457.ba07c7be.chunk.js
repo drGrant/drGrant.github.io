@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkprotfolio=self.webpackChunkprotfolio||[]).push([[457],{9457:function(t,e,l){l.r(e);var s=l(6459),a=(l(2791),l(7399)),c=l(184);e.default=function(t){Object.assign({},((0,s.Z)(t),t));return(0,c.jsx)("p",{className:"text-xl text-black px-4 max-w-3xl",children:a.dM})}}}]);
+//# sourceMappingURL=457.ba07c7be.chunk.js.map
