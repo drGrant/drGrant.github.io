@@ -22,24 +22,13 @@
 }
 :root {
   --radial: 132deg;
-  --gradColor_1: #ffb76b;
-  --gradColor_2: #22bad6;
-  --gradColor_gray_1: #696a6b;
-  --gradColorgray_2: #cdcecf;
-  --linerGradient: var(--gradColor_1) 15%, var(--gradColor_2) 90%;
+  --gradColor_1: rgba(55, 163, 207, 0.5);
+  --gradColor_2: rgba(34, 186, 214, 0.5);
+  --gradColor_gray_1: #c3bec5;
+  --gradColorgray_2: #9b5a9d;
+  --linerGradient: var(--gradColorgray_2) 15%, var(--gradColor_gray_1) 90%;
+  --linerGradient_2: var(--gradColor_1) 15%, var(--gradColor_2) 90%;
   --animationSpeed: 3s;
-}
-.grad1 {
-  background-color: var(--gradColor_1, #ffb76b);
-}
-.grad2 {
-  background-color: var(--gradColor_2, #22bad6);
-}
-.grad-t-1 {
-  color: var(--gradColor_1, #ffb76b);
-}
-.grad-t-2 {
-  color: var(--gradColor_2, #22bad6);
 }
 .Alfa {
   font-family: "Alfa Slab One", cursive;
@@ -330,5 +319,6 @@ code {
 }
 .grad-background {
   background: #ffffff;
-  background: linear-gradient(273deg, #ffffff 0%, #bcf4f5 30%, #6dc5f3 62%, #1a95f0 100%);
+  background: linear-gradient(273deg, #ffffff 0%, #bcf4f5 30%, #6dc5f3 62%, var(--gradColor_2) 100%);
+  background: linear-gradient(var(--radial), var(--linerGradient_2));
 }
