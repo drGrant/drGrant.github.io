@@ -328,3 +328,7 @@ code {
 .design {
   text-shadow: 0 0 10px var(--gradColor_1, #ffb76b), 5px 5px var(--gradColor_1, #ffb76b);
 }
+.grad-background {
+  background: #ffffff;
+  background: linear-gradient(273deg, #ffffff 0%, #bcf4f5 30%, #6dc5f3 62%, #1a95f0 100%);
+}

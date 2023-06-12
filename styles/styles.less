@@ -3,10 +3,10 @@
 @import "./animate.min.css";
 :root {
   --radial: 132deg;
-     --gradColor_1: rgba(255, 183, 107, 1);
-   --gradColor_2: rgba(34, 186, 214, 1);
- --gradColor_gray_1: rgba(105, 106, 107, 1);
- --gradColorgray_2: rgba(205, 206, 207, 1);
+  --gradColor_1: rgba(255, 183, 107, 1);
+  --gradColor_2: rgba(34, 186, 214, 1);
+  --gradColor_gray_1: rgba(105, 106, 107, 1);
+  --gradColorgray_2: rgba(205, 206, 207, 1);
   --linerGradient: var(--gradColor_1) 15%, var(--gradColor_2) 90%;
   --animationSpeed: 3s;
 }
@@ -296,7 +296,7 @@ code {
     height: 100vh;
     background-size: cover;
     background-image: url("/assets/img/c_space.jpg");
-    background-attachment:scroll;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center;
     // animation: heartBeat 5s ease-in-out;
@@ -308,9 +308,7 @@ code {
     background-size: cover;
     // scale: 1.041;
     // filter: blur(10px);
-
   }
- 
 }
 .moon {
   animation: fadeIn 1s ease-in-out, rubberBand 0.5s ease-in-out;
@@ -329,13 +327,26 @@ code {
 .clip-right {
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
-.corner_circle{
+.corner_circle {
   clip-path: circle(26.2% at 29% 71%);
 }
-.broken_glass{
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 92% 81%, 79% 83%, 66% 95%, 53% 67%, 43% 85%, 33% 79%, 20% 93%, 8% 90%, 0 100%);
+.broken_glass {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    92% 81%,
+    79% 83%,
+    66% 95%,
+    53% 67%,
+    43% 85%,
+    33% 79%,
+    20% 93%,
+    8% 90%,
+    0 100%
+  );
 }
-.intro_animation{
+.intro_animation {
   animation: fadeIn 1s ease-in-out;
 }
 @keyframes shiprattle {
@@ -384,4 +395,15 @@ code {
 }
 
 @media screen and (max-width: 769px) {
+}
+
+.grad-background {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    273deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(188, 244, 245, 1) 30%,
+    rgba(109, 197, 243, 1) 62%,
+    rgba(26, 149, 240, 1) 100%
+  );
 }
