@@ -3,9 +3,10 @@
 @import "./animate.min.css";
 :root {
   --radial: 132deg;
-  --gradColor_1: rgba(55, 163, 207, .5);
-  --gradColor_2: rgba(34, 186, 214, .5);
-  --gradColor_gray_1: rgba(195, 190, 197, 1);
+  --gradColor_1: rgba(55, 163, 207, .35);
+  --gradColor_2: rgba(34, 186, 214, .35);
+   --gradColor_gray_1: rgba(215, 210, 217, 1);
+ // --gradColor_gray_1: rgba(235, 225, 255, 1);
   --gradColorgray_2: rgba(155, 90, 157, 1);
   --linerGradient: var(--gradColorgray_2) 15%, var(--gradColor_gray_1) 90%;
   --linerGradient_2: var(--gradColor_1) 15%, var(--gradColor_2) 90%;
@@ -388,13 +389,5 @@ code {
 
 .grad-background {
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    273deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(188, 244, 245, 1) 30%,
-    rgba(109, 197, 243, 1) 62%,
-    var(--gradColor_2) 100%
-  );
-  
   background: linear-gradient(var(--radial), var(--linerGradient_2));
 }

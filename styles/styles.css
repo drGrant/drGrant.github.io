@@ -22,9 +22,9 @@
 }
 :root {
   --radial: 132deg;
-  --gradColor_1: rgba(55, 163, 207, 0.5);
-  --gradColor_2: rgba(34, 186, 214, 0.5);
-  --gradColor_gray_1: #c3bec5;
+  --gradColor_1: rgba(55, 163, 207, 0.35);
+  --gradColor_2: rgba(34, 186, 214, 0.35);
+  --gradColor_gray_1: #d7d2d9;
   --gradColorgray_2: #9b5a9d;
   --linerGradient: var(--gradColorgray_2) 15%, var(--gradColor_gray_1) 90%;
   --linerGradient_2: var(--gradColor_1) 15%, var(--gradColor_2) 90%;
@@ -319,6 +319,5 @@ code {
 }
 .grad-background {
   background: #ffffff;
-  background: linear-gradient(273deg, #ffffff 0%, #bcf4f5 30%, #6dc5f3 62%, var(--gradColor_2) 100%);
   background: linear-gradient(var(--radial), var(--linerGradient_2));
 }
